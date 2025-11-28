@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.contianer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn{
+
+    position: relative;
+}
+
+.btn:hover {
+
+    transition: 0.3s linear;
+}
+
+.btn::before{
+    content: "🤣";
+    position: absolute;
+    left: 20px;
+    top: -2px;
+    z-index: -1;
+    transition: 3s linear;
+}
+
+.btn:hover::before {
+    transform: rotate(30deg);
+    left: 40px;
+    top: -2px;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    content: "🤣";
+    position: absolute;
+    left: +28px;
+    top: -2px;
+    transform: rotate(30deg, );
+    z-index: -0px;
+    transition: 10s linear;
+}
